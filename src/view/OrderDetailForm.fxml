@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="401.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderDetailFormController">
+   <children>
+      <ImageView fitHeight="401.0" fitWidth="786.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/7-Best-Practices-for-Improving-Ecommerce-Marketing-in-Small-Businesses.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="401.0" prefWidth="786.0" style="-fx-background-color: rgba(44, 62, 80,0.5);">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="38.0" prefWidth="759.0" style="-fx-background-color: rgba(255,255,255,0.5);">
+               <children>
+                  <Label layoutX="14.0" layoutY="6.0" text="Order Id : " textFill="#d00000">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblOrderId" layoutX="100.0" layoutY="6.0" text="?????????" textFill="#d00000">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="408.0" layoutY="6.0" text="Date :" textFill="#d00000">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblOrdersDate" layoutX="470.0" layoutY="6.0" text="?????????" textFill="#d00000">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="619.0" layoutY="6.0" text="Time :" textFill="#d00000">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblOrderTime" layoutX="681.0" layoutY="6.0" text="?????????" textFill="#d00000">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="64.0" prefHeight="38.0" prefWidth="759.0" style="-fx-background-color: rgba(255,255,255,0.5);">
+               <children>
+                  <Label layoutX="14.0" layoutY="6.0" text="Customer Id :" textFill="#0007cf">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCusId" layoutX="145.0" layoutY="6.0" text="?????????" textFill="#0007cf">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="240.0" layoutY="6.0" text="Name :" textFill="#0007cf">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCusName" layoutX="302.0" layoutY="7.0" text="?????????" textFill="#0007cf">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="403.0" layoutY="6.0" text="Addres :" textFill="#0007cf">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCusAddress" layoutX="484.0" layoutY="6.0" text="?????????" textFill="#0007cf">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="600.0" layoutY="7.0" text="Salary : " textFill="#0007cf">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCusSalary" layoutX="661.0" layoutY="7.0" prefHeight="25.0" prefWidth="84.0" text="?????????" textFill="#0007cf">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tbl" layoutX="14.0" layoutY="114.0" prefHeight="274.0" prefWidth="759.0" style="-fx-background-color: transparent;">
+              <columns>
+                <TableColumn fx:id="colItemId" prefWidth="166.0" text="Item Id" />
+                <TableColumn fx:id="colUnitPrice" prefWidth="316.0" text="Unit Price" />
+                  <TableColumn fx:id="colPlacedQTY" prefWidth="276.0" text="Placed QTY" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" prefHeight="246.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="14.0" prefHeight="45.0" prefWidth="600.0" text="POS SYSTEM" textFill="#e40202">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="63.0" fitWidth="121.0" layoutX="44.0" layoutY="79.0" onMouseClicked="#imgOpenCustomerForm" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/user.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="188.0" layoutY="79.0" onMouseClicked="#imgOpenItemForm" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/item.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="63.0" layoutX="334.0" layoutY="79.0" onMouseClicked="#imgOpenOrderForm" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/order.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="99.0" fitWidth="63.0" layoutX="477.0" layoutY="79.0" onMouseClicked="#imgOpenPlaceOrderForm" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/placeOrder.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="494.0" layoutY="211.0" text="Version 1.0.0" textFill="#120d54">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
